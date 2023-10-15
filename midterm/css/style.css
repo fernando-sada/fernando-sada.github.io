@@ -1,0 +1,135 @@
+*{
+     box-sizing: border-box;
+}
+
+html{
+     background-color: #aad4cf;     
+     font-family: Arial, Helvetica, sans-serif;     
+}
+
+body{
+     background-color: rgba(255,255,255,0.5);
+     margin: auto;
+     width: 1024px;         
+}
+
+main, footer{
+     padding: 1rem;
+}
+
+footer p{
+     text-align: right;
+     padding-right: 2rem;
+}
+
+p{
+     font-size: 1rem;
+     line-height: 1.5rem;
+}
+
+h1 {font-size: 3.052rem}
+h2 {font-size: 2.441rem;}
+h3 {font-size: 1.953rem;}
+h4 {font-size: 1.563rem;}
+h5 {font-size: 1.25rem;}
+
+h1,h2,h3,h4,h5{
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+}
+
+header h1{
+     position: absolute; /*Using position: absolute; places the H1 on top of the image */
+     color: white;
+     font-size: 4rem;
+     transform: translate(-50%, 0); /*Translate -50% on X to change transform's center*/
+     left: 50%;
+     top: 200px;
+ }
+
+main article ul{
+     list-style-type: disc;     
+     margin-left: 1.5rem;
+     line-height: 1.5rem;
+}
+
+main article ul > li::marker {  
+     font-size: 1.5rem;
+}
+
+.p-img{
+     overflow: auto;
+}
+
+.p-img img{
+     width: 250px;
+     margin-right: 1rem;
+     margin-bottom: 1rem;
+     float: left;
+}
+
+/* NAVIGATION */
+header nav ul li{
+     width: 33%;
+     height: 50px;
+     font-size: 1.5rem;
+     text-transform: uppercase;
+     display: inline-block;
+     position: relative; /*Here I use Relative to keep <a> tags Absolute and in the center*/
+}
+
+header nav ul li a{
+     text-decoration: none;
+     color: black;
+     position: absolute; /*<a> tag position Absolute, combined with <li> position Relative*/
+     top: 50%; /*Position exactly in the center of its parent*/
+     left: 50%; /*Position exactly in the center of its parent*/
+     transform: translate(-50%, -50%); /*Translate -50% on X & Y to change transform's center*/     
+}
+
+header nav ul li a:hover{
+     color: blue;
+}
+header nav ul li a:active{
+     color: purple;
+}
+
+header nav ul li:not(:last-child){
+     border-right: 1px solid black;
+}
+/* NAVIGATION */
+
+/* FORM STYLES */
+form{
+     border: 1px solid black;
+     padding: 1rem;
+}
+
+input[type="text"], input[type="email"], textarea{
+     width: 100%;
+     min-height: 3rem;
+     padding: 1rem;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1rem;
+}
+
+input[type="radio"]{
+     display: inline;
+}
+
+input[type="submit"]{
+     display: block;
+     width: 70px;
+     height: 50px;
+     cursor: pointer;
+     text-transform: uppercase;
+     border:1px solid black;
+     background: none;
+}
+
+input, textarea{
+     margin-top: 1rem;
+     margin-bottom: 1rem;   
+     border: 1px solid grey;  
+}
+/* FORM STYLES */
