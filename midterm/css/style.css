@@ -38,7 +38,11 @@ h1,h2,h3,h4,h5{
      margin-bottom: 1rem;
 }
 
-header h1{
+.wrapper{
+     position: relative;
+}
+
+.wrapper h1{
      position: absolute; /*Using position: absolute; places the H1 on top of the image */
      color: white;
      font-size: 4rem;
