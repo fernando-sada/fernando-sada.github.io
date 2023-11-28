@@ -61,6 +61,10 @@ main article ul > li::marker {
      font-size: 1.5rem;
 }
 
+main article h3{
+     clear: both;
+}
+
 .p-img{
      overflow: auto;
 }

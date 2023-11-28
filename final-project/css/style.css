@@ -1,0 +1,311 @@
+/*
+     ASSIGNMENT INSTRUCTIONS 
+     • The maximum width of the container is 1200px
+     • Add a min-width media query for the screen size of 760px and above
+     • Use the 'Open Sans' Google font for the webpage
+     • Colours values used in the layout #c78c06, #ffe6ac, #222 and white
+     • Use of CSS Grid properties for a minimum of one element
+     • Use of CSS Flexbox properties for a minimum of one element 
+*/
+
+/* DEFAULTS (MOBILE FIRST)*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+     font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+     font-size: 3.986rem;
+     margin: 2rem 0 1.2rem 0;
+     font-weight: 700;
+     line-height: 5.5rem;
+}
+
+h2{
+     font-size: 2.5rem;
+     margin: 1.8rem 0 1.5rem 0;
+     font-weight: 700;
+}
+
+h3{
+     font-size: 1.8rem;
+     margin: 1rem 0 1rem 0;
+     font-weight: 700;     
+}
+
+h4{
+     font-size: 0.9rem;
+     font-weight: 700;
+     padding-bottom: 0.5rem;
+     border-bottom: 2px solid #c78c06;
+}
+
+p{
+     font-size: 0.8rem;
+     line-height: 1.3rem;
+     margin: 0.5rem 0;
+}
+
+a{
+     text-decoration: none;
+}
+
+img{
+     width: 100%;
+     height: auto;
+}
+
+.wrapper{
+     max-width: 1200px;
+     margin: auto;
+     padding: 1rem;
+}
+
+.logo{
+     width: 90px;
+     margin: 1rem 0;      
+}
+
+.logo-wrapper{
+     display: flex;
+     background-color: #c78c06;
+}
+
+header{
+     background-color: #222;
+}
+
+header nav ul li a{     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 3.4rem;
+     font-size: 1rem;
+     color: #c78c06;
+}
+
+header nav ul li a:hover{
+     background-color: #c78c06;
+     color: #222;
+}
+
+.search form{
+     display: flex;    
+}
+
+.search form input{
+     width: 100%;
+     font-size: 1rem;
+     color: #222;   
+}
+
+.search form button{
+     background-color: #222;
+     border: 1px solid #c78c06;
+     cursor: pointer;
+}
+
+.search form button span{     
+     color: #c78c06;
+     font-size: 1.8rem;
+}
+
+#main-banner{
+     background-image: url("../images/main-banner.jpg");
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     padding: 4rem 0;
+     display: grid;  
+     align-items: center;  
+     justify-content: center;   
+}
+
+.main-banner-inner{     
+     max-width: 1200px;
+     color: white;   
+     background-color: #222222c9;
+}
+
+.main-banner-inner p{
+     font-size: 0.8rem;
+     line-height: 1.3rem;
+     margin: 1rem 0;
+}
+
+.btn{
+     display: inline-flex;
+     align-items: center;
+     background-color: #222;
+     color: white;
+     padding: 1.1rem 1.1rem 1.1rem 1.7rem;
+}
+
+.btn span{
+     font-size: 2.5rem;
+}
+
+.main-banner-inner .btn{
+     background-color: #c78c06;
+     color: #222;
+}
+
+.vision-banner-inner .btn{
+     border: 1px solid #c78c06;
+     background-color: #2222228f;
+}
+
+#about-us{
+     display: flex;
+     background-color: #ffe6ac;
+}
+
+#services .wrapper{
+     display: grid;
+     grid-gap: 1rem;
+     grid-template-columns: repeat(1, auto);
+     grid-template-rows: repeat(5, auto);
+}
+
+#services .wrapper h2{
+     margin-bottom: 0.5rem;
+}
+
+.service-card{     
+     background-color: #ffe6ac;     
+}
+
+.service-card .caption{
+     padding: 1rem;
+}
+
+#vision{
+     background-image: url("../images/vision.jpg");
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     display: grid;  
+     align-items: center;  
+     justify-content: center;
+     margin-top: 0.5rem;  
+}
+
+
+.vision-banner-inner{     
+     max-width: 1200px;
+     color: white;   
+}
+
+/* .vision-banner-inner button{
+     border: 1px solid #c78c06;
+     background-color: #22222288;   
+     margin-top: 0.5rem;  
+}
+
+.vision-banner-inner button a{
+     color: white;
+} */
+
+#team .wrapper{
+     display: grid;
+     grid-gap: 1rem;
+}
+
+#team .wrapper h2{
+     margin-bottom: 1rem;
+}
+
+#team .team-member{
+     display: flex;
+     flex-wrap: wrap;
+}
+
+.member-text{
+     padding: 1rem;
+     background-color: #ffe6ac;
+}
+
+.member-text h3{
+     margin: 0.5rem 0;
+}
+
+.contact-inner{
+     display: flex;
+     flex-direction: column;
+}
+
+.contact-child{
+     display: flex;
+     flex-direction: column;
+}
+
+.contact-child:nth-child(3){
+     order: 2;
+}
+
+.contact-child:nth-child(2){
+     order: 3;
+}
+
+.contact-child form{
+     display: flex;
+     flex-direction: column;
+}
+
+.contact-child form input{
+     height: 1.3rem;
+     margin: 0.5rem 0;
+}
+
+.contact-child form textarea{
+     margin: 0.5rem 0;
+     height: 7.8rem;
+}
+
+.contact-child form button{
+     background-color: #222;
+     color: #c78c06;
+     margin-top: 0.6rem;
+     align-self: flex-start;
+     padding: 0.3rem;
+     font-size: 1.1rem;
+}
+
+.contact-child form label{
+     font-size: 0.8rem;
+}
+
+.hours-table thead{
+     text-align: center;
+     background-color: #ffe6ac;
+}
+
+.hours-table tr td{
+     padding: 0.8rem;
+     border: 1px solid black;
+}
+
+footer{
+     padding: 1.3rem 0.5rem 0.8rem 0.5rem;
+     background-color: #222;
+     color: #c78c06;
+}
+
+footer p{
+     margin: 0;
+}
+
+footer a{
+     text-decoration: underline;
+     color: #c78c06;
+}
+
+footer a:visited{
+     color: #c78c06;
+}
+
+#gmaps{
+     width: 100%;   
+     max-height: 400px;  
+}
